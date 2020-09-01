@@ -19,6 +19,7 @@ body {
     align-items: center;
     background-color: pink;
     border-bottom: 1px solid darkgray;
+    z-index: 1;
 }
 
 #navbar div input {
@@ -69,7 +70,6 @@ body {
 .main-header figure figcaption {
     width: 75%;
     padding: 5px 0;
-    
 }
 
 .main-header figure figcaption span {
@@ -98,7 +98,105 @@ body {
     border: 1px solid black;
     border-radius: 50%;
 }
-
 /*******************************************/
+
+/* main article */
+.article-container .article-section {
+    display: block;
+    width: 600px;
+    margin: auto;
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+.article-container .article-section .section-heading {
+    font-weight: 700;
+}
+
+.article-container .insert-container {
+    width: 600px;
+    margin: auto;
+}
+
+.article-container .insert-container span {
+    display: block;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.article-container .insert-container div {
+    width: 12%;
+    margin: 18px auto;
+    border-bottom: 1px solid gray;
+}
+
+/* figure container*/
+.article-container .figure-container {
+    position: relative;
+    display: block;
+    min-width: 720px;
+    max-width: 945px;
+    width: 100%;
+    height: 753px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.article-container .figure-container img {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    z-index: -1;
+    width: 100%;
+}
+
+.article-container .figure-container h1 {
+    margin: 6px 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.article-container .figure-container div {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#figure-descriptions-one {
+    top: 220px;
+}
+
+#figure-descriptions-two {
+    top: 500px;
+}
+
+.article-container .figure-container div p {
+    width: 228px;
+    margin: 0;
+}
+
+.article-container .figure-container div p span {
+    font-size: 0.75em;
+    font-weight: 800;
+}
+
+.article-container .figure-container .figure-author {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.article-container .figure-container .figure-author div {
+    display: block;
+    border-top: 1px solid black;
+    width: 20%;
+}
+
+.article-container .figure-container .figure-author span {
+    display: block;
+    margin: 20px 0;
+}
 
 /*******************************************/
