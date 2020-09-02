@@ -63,6 +63,7 @@ body {
 .main-header .header-heading h1 {
     font-size: 2.5em;
     font-weight: 700;
+    font-style: italic;
 }
 
 .main-header figure {
@@ -111,7 +112,7 @@ body {
     width: 600px;
     margin: auto;
     font-size: 1.4em;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 .article-container .article-section .section-heading {
     font-weight: 700;
