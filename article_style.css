@@ -52,6 +52,10 @@ body {
 }
 
 /* main header */
+.main-header {
+    margin: 40px 0;
+}
+
 .main-header > * {
     margin: 20px auto;
 }
@@ -249,8 +253,9 @@ body {
 .article-container .figure-container {
     display: block;
     max-width: 720px;
-    width: 600px;
-    margin: auto;
+    min-width: 360px;
+    width: 100%;
+    margin: 50px auto;
     background-color: transparent;
 }
 
