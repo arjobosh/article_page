@@ -17,15 +17,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
-    border-bottom: 1px solid darkgray;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
     z-index: 1;
 }
 
-#navbar div input {
-    background-color: white;
-    color: black;
-    border: 1px solid darkgray;
+#navbar .category-name {
+    font-weight: 700;
+}
+
+#navbar .logo-container {
+    width: 20%;
+    min-width: 150px;
+    max-width: 195px;
+    margin: 0 auto;
+}
+
+#navbar .nyt-logo {
+    width: 100%;
 }
 
 #navbar > * {
@@ -53,6 +62,7 @@ body {
 
 .main-header .header-heading h1 {
     font-size: 2.5em;
+    font-weight: 700;
 }
 
 .main-header figure {
@@ -90,13 +100,8 @@ body {
     display: block;
     width: 100%;
     margin: 20px 0;
-}
-
-.main-header .header-meta .header-btns .social-media-btn {
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 700;
 }
 /*******************************************/
 
@@ -122,6 +127,17 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
+    font-weight: 700;
+}
+
+.article-container .insert-container a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(50, 104, 145);
+    font-weight: 700;
 }
 
 .article-container .insert-container div {
@@ -130,8 +146,8 @@ body {
     border-bottom: 1px solid gray;
 }
 
-/* figure container*/
-.article-container .figure-container {
+/* interactive container*/
+.article-container .interactive-container {
     position: relative;
     display: block;
     min-width: 720px;
@@ -142,7 +158,7 @@ body {
     background-color: transparent;
 }
 
-.article-container .figure-container img {
+.interactive-container .interactive-img {
     position: absolute;
     left: 0;
     top: 75px;
@@ -150,13 +166,13 @@ body {
     width: 100%;
 }
 
-.article-container .figure-container h1 {
+.interactive-container h1 {
     margin: 6px 0;
     font-size: 1.5em;
     font-weight: 700;
 }
 
-.article-container .figure-container div {
+.interactive-container div {
     position: absolute;
     left: 0;
     display: flex;
@@ -164,39 +180,158 @@ body {
     width: 100%;
 }
 
-#figure-descriptions-one {
+#interactive-descriptions-one {
     top: 220px;
 }
 
-#figure-descriptions-two {
+#interactive-descriptions-two {
     top: 500px;
 }
 
-.article-container .figure-container div p {
+.interactive-container div p {
     width: 228px;
     margin: 0;
 }
 
-.article-container .figure-container div p span {
+.interactive-container div p span {
     font-size: 0.75em;
     font-weight: 800;
 }
 
-.article-container .figure-container .figure-author {
+.interactive-container .interactive-author {
     position: absolute;
     bottom: 20px;
     left: 0;
 }
 
-.article-container .figure-container .figure-author div {
+.interactive-container .interactive-author div {
     display: block;
     border-top: 1px solid black;
     width: 20%;
 }
 
-.article-container .figure-container .figure-author span {
+.interactive-container .interactive-author span {
     display: block;
     margin: 20px 0;
 }
-
 /*******************************************/
+
+/* video & figure containers */
+.article-container .video-container {
+    display: block;
+    width: 600px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.video-container iframe {
+    width: 100%;
+}
+
+.video-container figcaption {
+    display: block;
+    margin-top: 10px;
+}
+
+.video-container figcaption span, 
+.figure-container .figure-credit {
+    display: block;
+}
+
+.video-container .video-credit,
+.figure-container .figure-credit,
+#print-blurb {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.article-container .figure-container {
+    display: block;
+    max-width: 720px;
+    width: 600px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.figure-container .figure-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.figure-container figcaption {
+    width: 580px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+/*******************************************/
+
+a:visited {
+    color: gray;
+}
+
+.article-container .bottom-article-btns {
+    width: 600px;
+    height: 36px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-btn,
+#search-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: lightgray;
+}
+
+#subscribe-btn,
+#login-btn,
+#comments-btn {
+    background-color: rgb(50, 104, 145);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 5px 0;
+    font-weight: 600;
+    font-kerning: auto;
+}
+
+#subscribe-btn,
+#login-btn {
+    font-size: 0.8em;
+    padding: 8px 12px;
+}
+
+#comments-btn {
+    width: 330px;
+    height: inherit;
+}
+
+.main-header .header-meta .social-btns ul,
+.bottom-article-btns div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-header .header-meta .social-btns ul li,
+.bottom-article-btns div ul li {
+    float: left;
+}
+
+.main-header .header-meta .social-btns ul li a, 
+.bottom-article-btns div ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px;
+}
